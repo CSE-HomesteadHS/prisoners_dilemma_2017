@@ -1,0 +1,15 @@
+if getting_team_name:
+            return 'GotGrapes?'
+        else:
+            if len(opponent_history)==0:
+                return random.choice(c, b)
+            elif opponent_history[-1] == 'c':
+               if opponent_history[-2] == 'c':
+                    return 'b'
+               else:
+                    return 'c'
+            else:
+                if my_score < 100:
+                        return 'b'
+                else:
+                        return 'c'
